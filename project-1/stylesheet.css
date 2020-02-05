@@ -4,11 +4,8 @@ html {
 }
 
 body {
-  background-image: url('background.svg');
+  background-image: url("background.svg");
   margin: 0;
-  html {
-    scroll-behavior: smooth;
-  }
   /* background-color: #F7F7F7; */
 }
 /*font style*/
