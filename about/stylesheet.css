@@ -188,7 +188,7 @@ body {
       width: 100%;
       height: 100%;
       position: static;
-      background-image: url("/Users/taesamlee/Documents/web-design/compilation-site/about/about.png");
+      background-image: url("about/about.png");
       background-size: cover;
       background-repeat: repeat;
     }
