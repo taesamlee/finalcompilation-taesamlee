@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Lato:300,400,700|Montserrat&display=swap');
+
+body {
+    margin: 0px;
+    background-color: #fff;
+}
+
+/* font styles */
+.heading-jumbo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #0554f2;
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 400;
+    font-family: 'Lato', monospace;
+    text-align: left;
+    text-transform: none;
+}
+.title-text {
+    color: #000;
+    font-size: calc(18px + (24 - 18) * ((100vw - 400px) / (1600 - 300)));
+    font-family: 'Inconsolata';
+    font-weight: 400;
+    line-height: 34px;
+}
+.subtitle-text {
+  color: #000;
+  font-size: calc(14px + (20 - 14) * ((100vw - 400px) / (1600 - 300)));
+  font-family: 'Inconsolata';
+  font-weight: 400;
+  line-height: 34px;
+  opacity: 0.6;
+}
+.project-name-link {
+    margin-bottom: 5px;
+    color: #0554f2;
+    font-family: 'Inconsolata';
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.project-text {
+  color: #000;
+  font-size: calc(12px + (16 - 12) * ((100vw - 400px) / (1600 - 300)));
+  font-family: 'Lato';
+  font-weight: 400;
+  line-height: 34px;
+  opacity: 0.5;
+}
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 400;
+    font-family: Inconsolata;
+}
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: 400;
+  font-family: Lato;
+}
+h4 {
+  color: #000026;
+  font-family: 'Inconsolata', monospace;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+  margin: 0px 0px 0px 0px;
+  transition: all 0.8s ease-in-out;
+}
+
+.readings-title {
+    margin-bottom: 15px;
+    color: #0554f2;
+    font-size: 26px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: Inconsolata;
+}
+.readings-subtitle {
+  margin-bottom: 5px;
+  color: #0554f2;
+  opacity: 60%;
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 400;
+  font-family: Lato;
+}
+.readings-subtitle2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #000;
+  opacity: 60%;
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: 400;
+  font-family: lato;
+}
+
+
+
+/* Navbar */
+.brand {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top:0px;
+    margin-bottom: 4px;
+    font-family: Inconsolata, monospace;
+    color: #000026;
+    font-size: 20px;
+    font-weight: 400;
+    z-index: 20;
+}
+.logo-line {
+    display: inline-block;
+    width: 96px;
+    height: 2px;
+    margin: 0px 0px;
+    background-color: #0554f2;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    height: 80px;
+    padding-right: 4%;
+    padding-left: 4%;
+    display: flex;
+    align-items: center;
+    background-color: "";
+}
+
+/* Landing Section */
+.section {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.intro-wrap {
+    margin-top: 20%;
+    margin-bottom: 140px;
+}
+
+/* Projects Section */
+.projects-grid {
+  display: grid;
+  margin-bottom: 80px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-areas:
+        ". . ."
+        ". . .";
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  grid-template-rows: auto auto;
+}
+.w-layout-grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+}
+.work-description {
+  display: flex;
+  width: 100%;
+  margin-bottom: 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.project2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.project3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/* Readings Section */
+.readings-section {
+  width: 70%;
+  margin-bottom: 50px;
+}
+.readings-grid {
+    margin-bottom: 140px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-areas: ". . .";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.readings-position1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.readings-position2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.readings-position3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/* images styling */
+.work-image.cc-work-1 {
+    position: static;
+    background-image: url("whatiscode.png");
+    background-size: contain;
+    background-repeat: repeat;
+}
+.work-image.cc-work-2 {
+    position: static;
+    background-image: url("videoflag.png");
+    background-size: contain;
+    background-repeat: repeat;
+}
+.work-image.cc-work-3 {
+    position: static;
+    background-image: url("timeline.png");
+    background-size: cover;
+    background-repeat: repeat;
+}
+.work-image {
+    display: flex;
+    height: 460px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #f4f4f4;
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer {
+    margin: 10% 0 0 0;
+    display: flex;
+    padding: 16px 56px;
+    border-top: 1px solid #e2e3e7;
+}
+
+@media (max-width: 970px) {
+
+  .heading-jumbo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #0554f2;
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: normal;
+    font-family: 'Inconsolata', monospace;
+    text-transform: none;
+  }
+.navigation {
+  padding: 25px 30px;
+}
+.work-image {
+    display: flex;
+    height: 360px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #f4f4f4;
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+}
+
+.work-image.cc-work-3 {
+    position: static;
+    background-image: url("timeline.png");
+    background-size: contain;
+    background-repeat: repeat;
+}
+}
+
+@media (max-width: 560px){
+  .navigation {
+    padding: 20px 30px;
+  }
+
+  .projects-grid {
+    display: grid;
+    margin-bottom: 80px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-areas:
+          "."
+          "."
+          ".";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .w-layout-grid {
+      display: grid;
+      grid-auto-columns: 1fr;
+  }
+  .work-description {
+    display: flex;
+    width: 100%;
+    margin-bottom: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+  }
+  .project2 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+  }
+  .project3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .readings-grid {
+      margin-bottom: 140px;
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto auto;
+  }
+
+  .readings-position1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+  }
+  .readings-position2 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+  }
+  .readings-position3 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+  }
+
+
+  .intro-wrap {
+      margin-top: 40%;
+      margin-bottom: 140px;
+  }
+
+  .work-image {
+      display: flex;
+      height: 240px;
+      margin-bottom: 40px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      background-color: #f4f4f4;
+      background-position: 50% 50%;
+      background-size: cover;
+      text-align: center;
+      text-decoration: none;
+  }
+  .heading-jumbo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #0554f2;
+    font-size: 42fpx;
+    line-height: 50px;
+    font-weight: normal;
+    font-family: 'Inconsolata', monospace;
+    text-transform: none;
+  }
+}

@@ -1,0 +1,86 @@
+body {
+  background-image: url('https://web.archive.org/web/20090806030129im_/http://www.geocities.com/arielpurkey/starstwinkle.gif');
+}
+
+/* item 1*/
+.weirdbackground {
+  background-image: url('http://art.teleportacia.org/observation/vernacular/uc/3702707.gif');
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 100vh;
+  width: 55vh;
+}
+.container-grid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: auto;
+}
+
+.white {
+  color: #fff;
+}
+.spacer {
+  height: 120px;
+}
+
+/* item 2*/
+.weirdbackground2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+}
+
+/* wordart microsoft */
+.wordart {
+  font-family: Arial, sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.wordart.rainbow {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  position: absolute;
+  z-index: 5;
+  transform: scale(1, 1.5);
+  -webkit-transform: scale(1, 1.5);
+  -moz-transform: scale(1, 1.5);
+  -o-transform: scale(1, 1.5);
+  -ms-transform: scale(1, 1.5);
+}
+.wordart.rainbow .text {
+  background: red;
+  background: -webkit-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+  background: -o-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+  background: -moz-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+  background: linear-gradient(to right, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wordart {
+  font-family: Arial, sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.wordart.blues .text {
+    font-family: Impact, sans-serif;
+    color: #24c0fd;
+    -webkit-text-stroke: 0.01em #0000aa;
+    filter: progid:DXImageTransform.Microsoft.Glow(Color=#0000aa,Strength=1);
+    text-shadow: 0.13em -0.13em 0px #0000aa;
+    letter-spacing: -0.05em;
+}

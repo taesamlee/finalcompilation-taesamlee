@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+.maincontainer {
+  position: absolute;
+  z-index: 1;
+  margin: 30px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+}
+
+
+
+.content1{width: 260px;height: 337px;background-image: url('internet.png');
+  animation: move 5s linear infinite;
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+}
+.content2{width: 260px;height: 337px;background-image: url('internet.png');
+  animation: move 3s linear infinite;
+  position: absolute;
+  top: 337px;
+  z-index: 5;
+}
+.content3{width: 260px;height: 337px;background-image: url('internet.png');
+  animation: move 5s linear infinite;
+  position: absolute;
+  top: 540px;
+  z-index: 5;
+}
+.content4{width: 260px;height: 337px;background-image: url('internet.png');
+  animation: move 6s linear infinite;
+  position: absolute;
+  top: 200px;
+  z-index: 5;
+}
+.content5{width: 400px;height: 518px;background-image: url('internet.png');
+  animation: move 1s linear infinite;
+  opacity: 60%;
+  position: absolute;
+  top: 200px;
+  z-index: 5;
+}
+.content6{width: 260px;height: 337px;background-image: url('internet.png');
+  animation: move 6s linear infinite;
+  position: absolute;
+  top: 200px;
+  z-index: 5;
+}
+.content7{width: 260px;height: 337px;background-image: url('internet.png');
+  animation: move 8s linear infinite;
+  position: absolute;
+  top: 310px;
+  z-index: 5;
+}
+.content8{width: 400px;height: 518px;background-image: url('internet.png');
+  animation: move 2s linear infinite;
+  opacity: 40%;
+  position: absolute;
+  top: 160px;
+  z-index: 5;
+}
+.content9{width: 700px;height: 960px;background-image: url('internet.png');
+  animation: move 2s linear infinite;
+  opacity: 20%;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+.content10{width: 700px;height: 960px;background-image: url('internet.png');
+  animation: move 5s linear infinite;
+  opacity: 50%;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+.content11{width: 260px;height: 337px;background-image: url('internet.png');
+  animation: move 3s linear infinite;
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+}
+
+@keyframes move{
+
+0%{
+  transform:translate(0);
+  opacity:1;
+}
+
+50%{
+  transform:translate(1400px);
+  opacity:1;
+}
+100%{
+  opacity:1;
+}
+}
