@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-image: url('/Users/taesamlee/Documents/web-design/project-1/\ background.svg');
+  background-image: url('background.svg');
   margin: 0;
   html {
     scroll-behavior: smooth;
